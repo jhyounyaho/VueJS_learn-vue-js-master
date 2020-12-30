@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <p>{{ num }}</p>
+    <!--app-header v-on:하위 컴포넌트에서 발생한 이벤트 이름 = '상위컴포넌트'></app-header-->
+    <app-header v-on:pass='logText'></app-header>
+    <app-content-increase v-on:increase='increaseNumber'></app-content-increase>
+    <app-content-decrease v-on:decrease='decreaseNumber'></app-content-increase>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    let appHeader = {
+      template: '<button v-on:click="passEvent">Click me!</button>',
+      methods: {
+        passEvent: function() {
+          this.$emit('pass');
+        },
+      },
+    }
+
+    let appContentIncrease = {
+      template: '<button v-on:click="increaseNumber">increase</button>',
+      methods: {
+        increaseNumber: function() {
+          this.$emit('increase');
+        },
+      },
+    }
+
+    let appContentDecrease = {
+      template: '<button v-on:click="decreaseNumber">decrease</button>',
+      methods: {
+        decreaseNumber: function() {
+          this.$emit('decrease');
+        }
+      },
+    }
+
+    new Vue({
+      el: '#app',
+      components: {
+        'app-header': appHeader,
+        'app-content-increase': appContentIncrease,
+        'app-content-decrease': appContentDecrease,
+      },
+      methods: {
+        logText: function() {
+          console.log('logText');
+        },
+        increaseNumber: function() {
+          this.num++;
+        },
+        decreaseNumber: function() {
+          this.num--;
+        }
+      },
+      data: {
+        num: 10,
+      },
+    })
+  </script>
+</body>
+</html>
