@@ -1,5 +1,8 @@
-# learn-vue-js
-
+# learn-vue-js                 
+강의명: [인프런] Vue.js 시작하기 - Age of Vue.js          
+강사: 캡틴판교           
+skill: Front-End, javascript, Vue.js, 웹 개발          
+          
 ### Vue는 무엇인가?
 
 MVVM 패턴의 뷰모델(ViewModel) 레이어에 해당하는 화면(View)단 라이브러리  
@@ -110,3 +113,7 @@ vue.cmd create vue-form
 ### 싱글 파일 컴포넌트
 
 .vue 파일
+
+### 완강은 즐거워 :D           
+![vuejs_level1](https://user-images.githubusercontent.com/42309919/103457132-c64ac780-4d3f-11eb-889e-22316ed8aa6b.PNG)   
+ReactJS랑 비교하면서 듣다보니 재밌게 들었다. 이제 중급 들어야지!            
