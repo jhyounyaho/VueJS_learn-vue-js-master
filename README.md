@@ -55,10 +55,36 @@ https://kr.vuejs.org/v2/guide/computed.html
 
 #### 차이점
 
-computed                
-- 종속 대상을 따라 저장(캐싱)된다. 종속된 대상이 '변경'될 때만 함수를 실행한다.                
-- 대부분의 경우 computed 속성이 더 적합                
-                                                                
+computed
+
+- 종속 대상을 따라 저장(캐싱)된다. 종속된 대상이 '변경'될 때만 함수를 실행한다.
+- 대부분의 경우 computed 속성이 더 적합
+
 methods
-- 렌더링을 다시 할 때마다 '항상' 함수를 실행한다.                
-- 비동기식 또는 시간이 많이 소요되는 조작을 수행하려는 경우에 가장 유용                
+
+- 렌더링을 다시 할 때마다 '항상' 함수를 실행한다.
+- 비동기식 또는 시간이 많이 소요되는 조작을 수행하려는 경우에 가장 유용
+
+### vue-cli 설치
+
+[Vue CLI 2.X]
+vue init '프로젝트 템플릿 유형' '프로젝트 폴더 위치'
+vue init webpack-simple '프로젝트 폴더 위치'
+
+[Vue CLI 3.X]
+vue create '프로젝트 폴더 위치'
+
+npm install -g @vue/cli
+=> @vue/cli@4.5.9 설치
+
+vue.cmd create vue-cli
+or
+vue create vue-cli
+=> version 4 이상일 경우 create 로 설치
+Vue CLI v4.5.9
+? Please pick a preset: Default ([Vue 2] babel, eslint)
+? Pick the package manager to use when installing dependencies: NPM
+
+cd vue-cli
+
+npm run serve
