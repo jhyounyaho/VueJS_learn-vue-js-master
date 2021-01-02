@@ -9,14 +9,39 @@ MVVM 패턴의 뷰모델(ViewModel) 레이어에 해당하는 화면(View)단 �
 
 ![vuejs_samelevel](https://user-images.githubusercontent.com/42309919/103330948-14916980-4aa7-11eb-9a71-568b1c85df78.PNG)
 
-### v
+### v 디렉티브
 
-v-if
+https://kr.vuejs.org/v2/guide/index.html
+
+#### v-model
+
+양식에 대한 입력과 앱 상태(data 안에 있는 value)를 '양방향'으로 바인딩  
+ex) v-model='message'
+
+#### v-bind
+
+엘리먼트 속성 바인딩 (data 안에 있는 value)  
+ex) v-bind:title='message'
+
+#### v-on
+
+Vue 인스턴스에서 메소드를(methods 안에 있는 함수) 호출하는 이벤트 리스너 추가  
+사용자가 앱과 상호 작용할 수 있게 하기 위해 사용  
+ex) v-on:click='reserveMessage'
+
+#### v-if, v-else
+
+Vue 엘리먼트가 Vue에 삽입/업데이트/제거될 때 자동으로 트렌지션 효과 적용 (data 안에 있는 value)  
 조건 미충종식 dom에서 제거
-v-else
 
-v-show
-조건 미충족시 display:none
+#### v-show
+
+조건 미충족시 display:none (data 안에 있는 value)
+
+#### v-for
+
+배열의 데이터를 바인딩 (data 안에 있는 value - array)  
+ex) v-for='todo in todos'
 
 ### computed와 watch
 
