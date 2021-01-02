@@ -28,6 +28,7 @@ ex) v-bind:title='message', :title='message // 약어
 Vue 인스턴스에서 메소드를(methods 안에 있는 함수) 호출하는 이벤트 리스너 추가  
 사용자가 앱과 상호 작용할 수 있게 하기 위해 사용  
 ex) v-on:click='reserveMessage', @click='reverseMessage // 약어
+v-on:submit.prevent Vanilla.js 에서 e.preventDefault(); 와 같은 역할
 
 #### v-if, v-else
 
@@ -88,3 +89,5 @@ Vue CLI v4.5.9
 cd vue-cli
 
 npm run serve
+
+vue.cmd create vue-form
