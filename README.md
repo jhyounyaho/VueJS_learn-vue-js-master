@@ -9,7 +9,20 @@ MVVM 패턴의 뷰모델(ViewModel) 레이어에 해당하는 화면(View)단 �
 
 ![vuejs_samelevel](https://user-images.githubusercontent.com/42309919/103330948-14916980-4aa7-11eb-9a71-568b1c85df78.PNG)
 
-### v 디렉티브
+### 컴포넌트 통신
+
+단방향  
+props: 부모 -> 자식  
+event $emit: 자식 -> 부모
+
+### HTTP 통신 라이브러리 (axios)
+
+axios  
+.http method(url, data)  
+.then((res) => { 성공시 로직 })  
+.catch((err) => { 실패시 로직 })
+
+### 템플릿 문법 - vue 디렉티브 ( v-XXX )
 
 https://kr.vuejs.org/v2/guide/index.html
 
@@ -68,6 +81,8 @@ methods
 
 ### vue-cli 설치
 
+https://cli.vuejs.org/
+
 [Vue CLI 2.X]
 vue init '프로젝트 템플릿 유형' '프로젝트 폴더 위치'
 vue init webpack-simple '프로젝트 폴더 위치'
@@ -91,3 +106,7 @@ cd vue-cli
 npm run serve
 
 vue.cmd create vue-form
+
+### 싱글 파일 컴포넌트
+
+.vue 파일
