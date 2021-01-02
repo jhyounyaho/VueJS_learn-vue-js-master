@@ -21,13 +21,13 @@ ex) v-model='message'
 #### v-bind
 
 엘리먼트 속성 바인딩 (data 안에 있는 value)  
-ex) v-bind:title='message'
+ex) v-bind:title='message', :title='message // 약어
 
 #### v-on
 
 Vue 인스턴스에서 메소드를(methods 안에 있는 함수) 호출하는 이벤트 리스너 추가  
 사용자가 앱과 상호 작용할 수 있게 하기 위해 사용  
-ex) v-on:click='reserveMessage'
+ex) v-on:click='reserveMessage', @click='reverseMessage // 약어
 
 #### v-if, v-else
 
